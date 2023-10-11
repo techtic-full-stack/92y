@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /
+
+# Host
+Host: https://roundtable.org
+
+# Sitemaps
+Sitemap: https://roundtable.org/sitemap.xml
+Sitemap: https://roundtable.org/sitemaps/the-arts.xml
+Sitemap: https://roundtable.org/sitemaps/literature.xml
+Sitemap: https://roundtable.org/sitemaps/history.xml
+Sitemap: https://roundtable.org/sitemaps/food-cooking-drink.xml
+Sitemap: https://roundtable.org/sitemaps/current-events-politics-economics.xml

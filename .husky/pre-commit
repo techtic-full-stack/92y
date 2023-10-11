@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+export HUSKY=true
+npx pretty-quick --staged
+npx lint-staged

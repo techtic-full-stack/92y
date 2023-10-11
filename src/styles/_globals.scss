@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: auto !important;
+}
+body {
+    font-family: 'roobertregular';
+    background: #010132;
+}
+.container {
+    max-width: 1440px !important;
+}
+.style__LiveClassCard-sc-h1i1nb-1 {
+    @media (max-width: 767px) {
+        width: 90% !important;
+        height: auto !important;
+    }
+}
+// .alice-carousel__prev-btn {
+//     position: absolute;
+//     width: auto !important;
+//     bottom: -3.325rem;
+//     right: 6rem;
+//     display: flex !important;
+//     justify-content: flex-end;
+//     @media (max-width: 450px) {
+//         bottom: -3rem;
+//         right: 3.5rem;
+//     }
+// }
+// .alice-carousel__prev-btn-item {
+//     background: #e8a175 url('../public/icons/arrowRight.svg') no-repeat center;
+//     transform: rotate(180deg);
+//     border-radius: 50%;
+//     width: 2.25rem;
+//     height: 2.25rem;
+//     text-align: center;
+//     > span {
+//         visibility: hidden;
+//     }
+// }
+// .alice-carousel__next-btn {
+//     position: absolute;
+//     width: auto !important;
+//     bottom: -3.325rem;
+//     right: 3rem;
+//     display: flex !important;
+//     justify-content: flex-end;
+//     @media (max-width: 450px) {
+//         bottom: -3rem;
+//         right: 0.8rem;
+//     }
+// }
+// .alice-carousel__next-btn-item {
+//     background: #e8a175 url('../public/icons/arrowRight.svg') no-repeat center;
+//     border-radius: 50%;
+//     width: 2.25rem;
+//     height: 2.25rem;
+//     text-align: center;
+//     > span {
+//         visibility: hidden;
+//     }
+// }
+input[type='checkbox'] {
+    position: relative;
+    cursor: pointer;
+}
+input[type='checkbox']:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1.125rem;
+    height: 1.125rem;
+    top: 0;
+    left: 0;
+    border-radius: 0.1875rem;
+    background-color: white;
+}
+input[type='checkbox']:checked:after {
+    content: '';
+    display: block;
+    width: 0.4375rem;
+    height: 0.8125rem;
+    border: solid #010132;
+    border-width: 0 0.15rem 0.15rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.375rem;
+}
+.ant-drawer-header-title {
+    flex-direction: row-reverse;
+}
+.ant-drawer-open {
+    top: 4.75rem !important;
+    border-top: 0.0625rem solid #f3f3f3;
+}
+.ant-drawer {
+    transition: height 0.3s ease-out 0.3s !important;
+}
+.ant-drawer-content-wrapper {
+    box-shadow: none !important;
+}
+.ant-select-dropdown {
+    width: 15.625rem !important;
+    border-radius: 0.5rem !important;
+    border: 0.0625rem solid #000000 !important;
+    z-index: 0 !important;
+    @media (max-width: 410px) {
+        left: 60px !important;
+    }
+}
+.ant-select-item-option {
+    padding: 0.75rem !important;
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    width: 95%;
+    border-bottom: 0.0063rem solid #000000 !important;
+}
+.ant-select-item-option:last-child {
+    border-bottom: none !important;
+}
+.ant-select-item-option-selected {
+    background: #ffffff !important;
+}
+.ant-select-item-option-hover {
+    background: #010132 !important;
+}
+
+.ant-select-item-option-selected > .ant-select-item-option-content {
+    opacity: 1 !important;
+}
+.ant-select-item-option-active > .ant-select-item-option-content {
+    opacity: 1 !important;
+    color: #000000;
+}
+.ant-select-item-option-content {
+    opacity: 0.5 !important;
+}
+.ant-select-focus,
+.ant-select-selector {
+    border: none !important;
+    box-shadow: none !important;
+}
+.ant-select-item-option-active > .ant-select-item-option-state {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 0.8081rem;
+    width: 0.3581rem;
+    border-bottom: 0.125rem solid black;
+    border-right: 0.125rem solid black;
+    margin-right: 0.5rem;
+}
+.ant-select-item-option-selected > .ant-select-item-option-state {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 0.8081rem;
+    width: 0.3581rem;
+    border-bottom: 0.125rem solid black;
+    border-right: 0.125rem solid black;
+    margin-right: 0.5rem;
+}
+.ant-picker-range {
+    background: #f3f3f3 !important;
+    border: none !important;
+}
+.ant-picker-input > input {
+    font-size: 1rem !important;
+}
+.ant-picker-input {
+    margin-right: -0.625rem;
+}
+.ant-picker-range-separator {
+    margin-right: 1rem;
+}
+.ant-picker-panels {
+    @media (max-width: 600px) {
+        flex-direction: column !important;
+    }
+}
+.ant-picker-active-bar {
+    background: #010132 !important;
+}
+.ant-picker-header-view > button:hover {
+    color: #010132 !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner {
+    background: #010132 !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    background: #010132 !important;
+}
+.ant-picker-dropdown {
+    @media (min-width: 820px) {
+        left: 250px !important;
+    }
+    z-index: 0 !important;
+}
+
+.ant-menu-submenu-popup {
+    min-width: 12.5rem !important;
+    position: fixed !important;
+    @media (max-width: 1057px) {
+        top: 19.0625rem !important;
+        left: 2.5rem !important;
+    }
+    .ant-menu-item {
+        height: 42px !important;
+        line-height: 42px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: #ffffff !important;
+    }
+    a {
+        font-family: 'roobertregular';
+        font-size: 0.875rem !important;
+        margin-left: 0 !important;
+        color: #000000 !important;
+    }
+    a:hover {
+        font-family: 'roobertbold';
+        color: #010132 !important;
+        font-weight: 500 !important;
+    }
+    .ant-menu-item .ant-menu-item-only-child {
+        height: 41px !important;
+    }
+    .ant-menu-vertical {
+        > .ant-menu-item {
+            max-height: 41.333px !important;
+            border-bottom: 0.0625rem solid black !important;
+            width: 100%;
+            padding-left: 0 !important;
+            span {
+                margin-left: 0 !important;
+            }
+        }
+        li:last-child {
+            border-bottom: none !important;
+        }
+    }
+    .ant-menu-sub {
+        border-radius: 0.5rem !important;
+        border: 0.0625rem solid #000000 !important;
+        padding-left: 0.75rem !important;
+    }
+    .anticon {
+        position: absolute;
+        right: 0.9163rem;
+    }
+    .ant-menu-title-content {
+        padding-left: 0 !important;
+    }
+}
+
+.ant-menu-vertical.ant-menu-sub .ant-menu-item {
+    display: flex !important;
+}

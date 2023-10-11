@@ -1,0 +1,23 @@
+name: roundtable
+stage: stage
+
+roundtable:
+    component: '@sls-next/serverless-component@v3.7.0-alpha.12'
+    inputs:
+        build:
+            cmd: yarn
+            env:
+                ENVIRONMENT: stage
+        useServerlessTraceTarget: true
+        cloudfront:
+            certificate:
+                cloudFrontDefaultCertificate: false # specify false and one of IAM/ACM certificates, or specify true and omit IAM/ACM inputs for default certificate
+                acmCertificateArn: arn:aws:acm:us-east-1:790530808260:certificate/67064672-2f1c-464b-8347-c72040eda15b
+                sslSupportMethod: 'sni-only' # can be omitted, defaults to "sni-only"
+                minimumProtocolVersion: 'TLSv1.2_2019' # can be omitted, defaults to "TLSv1.2_2019"
+        domain: ['stage', '${name}.org']
+        bucketName: '${name}-web-stage'
+        description: '${name} WebApp (Stage)'
+        name:
+            defaultLambda: '${name}-web-stage'
+            apiLambda: '${name}-web-api-stage'
